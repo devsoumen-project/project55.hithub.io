@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap_v5.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="css/stsheet.css" rel="stylesheet">
+  <link href="css/view_on_hover.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+  <script type="text/javascript" src="js/jssor.js"></script>
+  <script type="text/javascript" src="js/jssor.slider.js"></script>
+
+
+
+  <style>
+    html,
+    body {
+      overflow-x: hidden;
+      /* Prevent scroll on narrow devices */
+    }
+
+
+
+    @media (max-width: 1920px) {
+      .offcanvas-collapse {
+        position: fixed;
+        top: 0px;
+        /* Height of navbar */
+        bottom: 0;
+        right: 100%;
+        width: 50%;
+        padding-right: 1rem;
+        padding-left: 1rem;
+        overflow-y: auto;
+        visibility: hidden;
+        background-color: #000000c2;
+        padding-top: 60px;
+        height: 100vh;
+        transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+      }
+
+      .offcanvas-collapse.open {
+        visibility: visible;
+        transform: translateX(99%);
+      }
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      color: rgba(255, 255, 255, .75);
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-underline .nav-link {
+      padding-top: .75rem;
+      padding-bottom: .75rem;
+      font-size: .875rem;
+      color: #6c757d;
+    }
+
+    .nav-underline .nav-link:hover {
+      color: #007bff;
+    }
+
+    .nav-underline .active {
+      font-weight: 500;
+      color: #343a40;
+    }
+
+    .text-white-50 {
+      color: rgba(255, 255, 255, .5);
+    }
+
+    .bg-purple {
+      background-color: #6f42c1;
+    }
+
+    .crs_nv.open .navbar-toggler {
+      rotate: 90deg;
+      transition: transform .2s ease-in-out;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+
+
+
+  
+
+
+  <div class=" container-fluid  max-w-1366 p-0 cnav rel_pos bg-info">
+    <nav class="navbar sticky-top navbar-light crs_nv cu_bg-transparent  abl_pos navbar-expand-xxl znavbar-expand-md">
+      <div class="container scrl_bg p-0">
+        <a class="navbar-brand" href="#"><img class="img-fluid mx-ht-50" src="images/logo-l.png"></a>
+        <div class="right_top_box tex text-right zbg-info">  
+
+
+ 
+
+          <a class="login round_yellow" href="#"><img class="img-fluid mx-ht-50" src="images/login_icn.png">Login</a>
+          <a class="signup  round_yellow" href="#"><img class="img-fluid mx-ht-50" src="images/signup_icn.png">Signup</a>
+          <a class="shp_cart mr-5  round_yellow" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#fff" class="bi bi-handbag-fill" viewBox="0 0 16 16"><path d="M8 1a2 2 0 0 0-2 2v2H5V3a3 3 0 1 1 6 0v2h-1V3a2 2 0 0 0-2-2zM5 5H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11v1.5a.5.5 0 0 1-1 0V5H6v1.5a.5.5 0 0 1-1 0V5z"></path></svg>
+          
+            <span> 50</span>
+            
+          </a>
+
+
+
+          <button class="navbar-toggler custom-toggler" type="button" data-toggle="offcanvas"
+          data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon ">
+            <img class="img-fluid mx-ht-50" src="images/nav_icn.png">
+
+          
+          </span>
+        </button>
+       
+       
+        </div>
+
+        
+        <div class="navbar-collapse offcanvas-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About </a>
+            </li>
+            <!-- <li class="nav-item">
+            <a class="nav-link" href="#">  Services</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Gallery   </a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#">  Blog </a>
+          </li> -->
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Contact</a>
+            </li>
+
+
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div class="container">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+      </div>
+
+      <div class="carousel-inner">
+
+      
+        
+
+        <div class="carousel-item  text-center active ">
+          <img class="img-fluid  " src="images/banner1.png" alt="AAAAA" style="min-height:380px;">
+
+          <div class="container rel_pos p-0">
+            <div class="carousel-caption text-right text-right">
+              <h1><span class="d-block">spring</span>
+                collection</h1>
+
+
+              <p class="mt-3 mb-5 text-right text-box">
+
+
+                <a class="btn button btn-lg 
+     mb-4 mt-2 btn-white btn-animate border-2" href="#" role="button"><span>Explore Now </span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item  text-center  ">
+          <img class="img-fluid  " src="images/banner2.png" alt="AAAAA" style="min-height:380px;">
+
+          <div class="container rel_pos p-0">
+            <div class="carousel-caption text-right text-right">
+              <h1><span class="d-block">summer</span>
+                collection</h1>
+
+
+              <p class="mt-3 mb-5 text-right text-box">
+
+
+                <a class="btn button btn-lg 
+  mb-4 mt-2 btn-white btn-animate border-2" href="#" role="button"><span>Explore Now </span></a>
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="carousel-item  text-center  ">
+          <img class="img-fluid  " src="images/banner3.png" alt="AAAAA" style="min-height:380px;">
+
+          <div class="container rel_pos p-0">
+            <div class="carousel-caption text-right text-right">
+              <h1><span class="d-block">winter</span>
+                collection</h1>
+
+
+              <p class="mt-3 mb-5 text-right text-box">
+
+
+                <a class="btn button btn-lg 
+  mb-4 mt-2 btn-white btn-animate border-2" href="#" role="button"><span>Explore Now </span></a>
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+  
+          
+
+          <a  class="cata_gory d-flex justify-content-between" href="#"> 
+            <img class="img-fluid  " src="images/catgory_icn.png" alt="AAAAA" ><span> Category</span>
+            
+          </a>
+
+           
+           <a  class="cata_gory search_bx d-flex justify-content-between" href="#"> 
+            <img class="img-fluid  " src="images/search.png" alt="AAAAA" ><span> Search</span>
+            
+          </a>
+
+
+      </div>
+
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+        <span class="visually-hidden">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </a>
+    </div>
+
+  </div>
+
+
+
+  <section class="top_catogery">
+
+    <div class="container">
+      <h2 class="text-center sec_hedr he_ading und_rline">TOP CATEGORIES RIGHT NOW</h2>
+      <div class="cu_row">
+
+
+
+        <div class="col-12 col-md-12 zd-flex zflex-wrap zjustify-content-between img_fluid maindiv  ">
+
+
+          <div class="  cnt_dtl_pic_box zborder p-0 mb-3 tab as_item "  data-aos="example-anim3">
+            <div class="cont_dtl_pic efct_zom ">
+
+              <div class="effect effect-three col3-block-height ">
+                <img class="img-fluid  " src="images/men.png" alt="AAAAA" />
+                <div class="tab-text">
+                  <h2>Men</h2>
+                  <a class="shop-nw" href="#">SHOP NOW </a>
+                  <p class=""> 
+                    <a href="#"> <i class="fas fa-eye"></i> </a>
+                     <a href="#"><i class="fas fa-cart-plus"></i> </a> 
+                     <!-- <a href="#"><i class="fab fa-youtube-square"></i></a> -->
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+
+
+          </div>
+          <div class="  cnt_dtl_pic_box zborder p-0 mb-3  tab as_item"   data-aos="example-anim3">
+            <div class="cont_dtl_pic efct_zom   effect effect-three col3-block-height">
+              <!-- <img class="img-fluid  " src="images/banner1.png" alt="AAAAA" /> -->
+              <div class=" ">
+                <img class="img-fluid  " src="images/accessories.png" alt="AAAAA" />
+                <div class="tab-text">
+                  <h2>Accessories</h2>
+                  <a class="shop-nw" href="#">SHOP NOW </a>
+
+                  <p class=""> 
+                    <a href="#"> <i class="fas fa-eye"></i> </a>
+                     <a href="#"><i class="fas fa-cart-plus"></i> </a> 
+                     <!-- <a href="#"><i class="fab fa-youtube-square"></i></a> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+
+          <div class="  cnt_dtl_pic_box zborder p-0 mb-3 tab as_item "  data-aos="example-anim3">
+            <div class="cont_dtl_pic efct_zom  effect effect-three col3-block-height">
+              <!-- <img class="img-fluid  " src="images/banner1.png" alt="AAAAA" /> -->
+              <div class=" ">
+                <img class="img-fluid  " src="images/women.png" alt="AAAAA" />
+                <div class="tab-text">
+                  <h2>Women</h2>
+                  <a class="shop-nw" href="#">SHOP NOW </a>
+                  <p class=""> 
+                    <a href="#"> <i class="fas fa-eye"></i> </a>
+                     <a href="#"><i class="fas fa-cart-plus"></i> </a> 
+                     <!-- <a href="#"><i class="fab fa-youtube-square"></i></a> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="dels_of_day">
+
+    <div class="container zbg-danger mt-5">
+      <h2 class="text-center sec_hedr he_ading und_rline mt-5 pt-5">DEALS OF THE DAY</h2>
+      <div class="cu_row gry_bg product_pic">
+
+
+
+        <div class="col-12 col-md-12 zd-flex zflex-wrap zjustify-content-between img_fluid maindiv  ">
+ 
+
+          <div class="  cnt_dtl_pic_box zborder p-0 mb-3 tab">
+            <div class="cont_dtl_pic efct_zom   effect effect-three col3-block-height">
+              <!-- <img class="img-fluid  " src="images/banner1.png" alt="AAAAA" /> -->
+              <div class=" ">
+                <img class="img-fluid  " src="images/hat2.png" alt="AAAAA" />
+                <div class="tab-text">
+                 
+                  <p class=""> 
+                    <a href="#"> <i class="fas fa-eye"></i> </a>
+                     <a href="#"><i class="fas fa-cart-plus"></i> </a> 
+                     <!-- <a href="#"><i class="fab fa-youtube-square"></i></a> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="cont_dtl_pic_dec efct_zom bg_pic_left bg-white py-2  px-2">
+              <p class="lrg_txt m-0">
+                Product price
+              </p>
+
+
+              <p class="m-0">
+
+                $ 299.00
+              </p>
+            </div>
+
+
+
+          </div>
+
+          <div class="  cnt_dtl_pic_box zborder p-0 mb-3 tab " >
+            <div class="cont_dtl_pic efct_zom  effect effect-three col3-block-height">
+              <!-- <img class="img-fluid  " src="images/banner1.png" alt="AAAAA" /> -->
+              <div class=" ">
+                <img class="img-fluid  " src="images/new-item1.png" alt="AAAAA" />
+                <div class="tab-text">
+                 
+                  <p class=""> 
+                    <a href="#"> <i class="fas fa-eye"></i> </a>
+                     <a href="#"><i class="fas fa-cart-plus"></i> </a> 
+                     <!-- <a href="#"><i class="fab fa-youtube-square"></i></a> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="cont_dtl_pic_dec efct_zom bg_pic_left bg-white py-2  px-2">
+              <p class="lrg_txt m-0">
+                Product price
+              </p>
+
+
+              <p class="m-0">
+
+                $ 299.00
+              </p>
+            </div>
+
+
+
+          </div>
+          <div class="  cnt_dtl_pic_box zborder p-0 mb-3 tab ">
+            <div class="cont_dtl_pic efct_zom  effect effect-three col3-block-height">
+              <!-- <img class="img-fluid  " src="images/banner1.png" alt="AAAAA" /> -->
+              <div class=" ">
+                <img class="img-fluid  " src="images/new-item2.png" alt="AAAAA" />
+                <div class="tab-text">
+                 
+                  <p class=""> 
+                    <a href="#"> <i class="fas fa-eye"></i> </a>
+                     <a href="#"><i class="fas fa-cart-plus"></i> </a> 
+                     <!-- <a href="#"><i class="fab fa-youtube-square"></i></a> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="cont_dtl_pic_dec efct_zom bg_pic_left bg-white py-2  px-2">
+              <p class="lrg_txt m-0">
+                Product price
+              </p>
+
+
+              <p class="m-0">
+
+                $ 299.00
+              </p>
+            </div>
+
+
+
+          </div>
+          <div class="  cnt_dtl_pic_box zborder p-0 mb-3 tab ">
+            <div class="cont_dtl_pic efct_zom  effect effect-three col3-block-height">
+              <!-- <img class="img-fluid  " src="images/banner1.png" alt="AAAAA" /> -->
+              <div class=" ">
+                <img class="img-fluid  " src="images/new-item3.png" alt="AAAAA" />
+                <div class="tab-text">
+                 
+                  <p class=""> 
+                    <a href="#"> <i class="fas fa-eye"></i> </a>
+                     <a href="#"><i class="fas fa-cart-plus"></i> </a> 
+                     <!-- <a href="#"><i class="fab fa-youtube-square"></i></a> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="cont_dtl_pic_dec efct_zom bg_pic_left bg-white py-2  px-2">
+              <p class="lrg_txt m-0">
+                Product price
+              </p>
+
+
+              <p class="m-0">
+
+                $ 299.00
+              </p>
+            </div>
+
+
+
+          </div>
+          <div class="  cnt_dtl_pic_box zborder p-0 mb-3 tab ">
+            <div class="cont_dtl_pic efct_zom  effect effect-three col3-block-height">
+              <!-- <img class="img-fluid  " src="images/banner1.png" alt="AAAAA" /> -->
+              <div class=" ">
+                <img class="img-fluid  " src="images/banner1.png" alt="AAAAA" />
+                <div class="tab-text">
+                 
+                  <p class=""> 
+                    <a href="#"> <i class="fas fa-eye"></i> </a>
+                     <a href="#"><i class="fas fa-cart-plus"></i> </a> 
+                     <!-- <a href="#"><i class="fab fa-youtube-square"></i></a> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="cont_dtl_pic_dec efct_zom bg_pic_left bg-white py-2  px-2">
+              <p class="lrg_txt m-0">
+                Product price
+              </p>
+
+
+              <p class="m-0">
+
+                $ 299.00
+              </p>
+            </div>
+
+
+
+          </div>
+          <div class="  cnt_dtl_pic_box zborder p-0 mb-3 tab ">
+            <div class="cont_dtl_pic efct_zom  effect effect-three col3-block-height">
+              <!-- <img class="img-fluid  " src="images/banner1.png" alt="AAAAA" /> -->
+              <div class=" ">
+                <!-- <img class="img-fluid  " src="images/woo1.png" alt="AAAAA" /> -->
+                <img class="img-fluid  " src="images/new-item4.png" alt="AAAAA" />
+                <div class="tab-text">
+                
+
+                  <p class=""> 
+                    <a href="#"> <i class="fas fa-eye"></i> </a>
+                     <a href="#"><i class="fas fa-cart-plus"></i> </a> 
+                     <!-- <a href="#"><i class="fab fa-youtube-square"></i></a> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="cont_dtl_pic_dec efct_zom bg_pic_left bg-white py-2  px-2">
+              <p class="lrg_txt m-0">
+                Product price
+              </p>
+
+
+              <p class="m-0">
+
+                $ 299.00
+              </p>
+            </div>
+
+
+
+          </div>
+          <div class="  cnt_dtl_pic_box zborder p-0 mb-3 tab ">
+            <div class="cont_dtl_pic efct_zom  effect effect-three col3-block-height">
+              <!-- <img class="img-fluid  " src="images/banner1.png" alt="AAAAA" /> -->
+              <div class=" ">
+                <img class="img-fluid  " src="images/hat2.png" alt="AAAAA" />
+                <div class="tab-text">
+                 
+                  <p class=""> 
+                    <a href="#"> <i class="fas fa-eye"></i> </a>
+                     <a href="#"><i class="fas fa-cart-plus"></i> </a> 
+                     <!-- <a href="#"><i class="fab fa-youtube-square"></i></a> -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="cont_dtl_pic_dec efct_zom bg_pic_left bg-white py-2  px-2">
+              <p class="lrg_txt m-0">
+                Product price
+              </p>
+
+
+              <p class="m-0">
+
+                $ 299.00
+              </p>
+            </div>
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+ 
+
+  
+
+
+
+
+  <section>
+    <div class="container">
+
+      <h2 class="text-center sec_hedr he_ading und_rline">TOP SELLING PRODUCTS RIGHT NOW</h2>
+      <div class="top_selling_product">
+
+        <div class="zrow d-flex flex-wrap justify-content-center">
+
+          <div class="col-12 col-md-6 bg-info "> <img class="img-fluid  " src="images/left-img.png" alt="AAAAA" /></div>
+
+          <div class="col-12 col-md-6 d-flex justify-content-center zbg-success">
+            <div class="my-auto p-3">
+              <h4>Lorem Ipsum</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since th</p>
+
+
+              <a class="btn button btn-lg 
+     mb-4 mt-2 btn-white btn-animate border-2 btn_dark" href="#" role="button"><span>Explore Now </span></a>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="zrow d-flex flex-wrap justify-content-center mt-5">
+
+
+
+          <div class="col-12 col-md-6 d-flex justify-content-center zbg-success">
+            <div class="my-auto p-3">
+              <h4>Lorem Ipsum</h4>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since th</p>
+
+              <a class="btn button btn-lg 
+     mb-4 mt-2 btn-white btn-animate border-2 btn_dark" href="#" role="button"><span>Explore Now </span></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 bg-info "> <img class="img-fluid  " src="images/right-img1.png" alt="AAAAA" />
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+  
+   
+
+  
+  <!-- <div class="as_item ztwm" data-aos="example-anim3">2</div>
+  <div class="as_item" data-aos="example-anim3">3</div>
+  <div class="as_item" data-aos="example-anim1">4</div>
+  <div class="as_item" data-aos="example-anim2">5</div>
+  <div class="as_item" data-aos="example-anim3">6</div>
+  <div class="as_item" data-aos="example-anim1">7</div>
+  <div class="as_item" data-aos="example-anim2">8</div>
+  <div class="as_item" data-aos="example-anim3">9</div> -->
+  
+   
+
+  <section class="new_arrival pt-3">
+    <div class="container">
+      <h2 class="text-center sec_hedr he_ading und_rline">NEW ARRIVALS</h2>
+      <div class="row">
+
+        <div class="d-flex flex-wrap text-white">
+
+          <div class="col-12 col-md-3 text-left">
+            <div class="new-item ">
+              <div class="new-img ">
+                <img class="img-fluid mx-ht-100" src="images/new-item1.png">
+              </div>
+
+              <div class="item-details text-dark">
+                <p>Lorem Product
+                  Rs. 299/-</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-3 text-left">
+            <div class="new-item">
+              <div class="new-img ">
+                <img class="img-fluid mx-ht-100" src="images/new-item2.png">
+              </div>
+
+              <div class="item-details text-dark">
+                <p>Lorem Product
+                  Rs. 299/-</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3 text-left">
+            <div class="new-item">
+              <div class="new-img ">
+                <img class="img-fluid mx-ht-100" src="images/new-item3.png">
+              </div>
+
+              <div class="item-details text-dark">
+                <p>Lorem Product
+                  Rs. 299/-</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-3 text-left">
+            <div class="new-item">
+              <div class="new-img ">
+                <img class="img-fluid mx-ht-100" src="images/new-item4.png">
+              </div>
+
+              <div class="item-details text-dark">
+                <p>Lorem Product
+                  Rs. 299/-</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="testimonial">  
+
+<div class="container-fluid d-flex position-relative p-0 testimoni_bg">
+  <!-- <img class="img-fluid" src="images/testimonial_bg.png" /> -->
+<div class="container my-auto">
+
+  <div id="banner"   class="zbg-secondary text-white ">
+    <div id="testomoniBanner" class="carousel slide" data-ride="carousel" data-interval="3000">
+      <!-- <ol class="carousel-indicators">
+        <li data-target="#testomoniBanner" data-slide-to="0" class="active"></li>
+        <li data-target="#testomoniBanner" data-slide-to="1"></li>
+        <li data-target="#testomoniBanner" data-slide-to="2"></li>
+      </ol> -->
+      <div class="carousel-inner">
+        <div class="testimoni_sldr_item carousel-item active d-flex" >
+          <div class="p-4 bounceIn col-12 col-md-2 my-auto">
+            <span class="testi_avtar testmoni_circle"> 
+              <img class="img-fluid " src="images/testmoni_circle.png"/>
+              
+            </span>
+          </div>
+          <div class="fadeInRight testi_content my-auto">  
+            <div><img class="img-fluid " src="images/qte_icn.png"/></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, autem!</p>
+            <p>Lorem ipsum </p>
+          </div>
+        </div>
+        <div class= "testimoni_sldr_item carousel-item d-flex" >
+          <div class="p-4 bounceIn col-12 col-md-2 my-auto">
+            <span class="testi_avtar testmoni_circle"> 
+              <img class="img-fluid " src="images/testmoni_circle.png"/>
+              
+              
+            </span>
+          </div>
+            <div class="fadeInRight testi_content my-auto">  
+              <div><img class="img-fluid " src="images/qte_icn.png"/></div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, autem!</p>
+              <p>Lorem ipsum </p>
+            </div>
+        </div>
+        <div class= "testimoni_sldr_item carousel-item d-flex" >
+          <div class="p-4 bounceIn col-12 col-md-2 my-auto">
+            <span class="testi_avtar testmoni_circle"> 
+              <img class="img-fluid " src="images/testmoni_circle.png"/>
+              
+            </span>
+          </div>
+          <div class="fadeInRight testi_content my-auto">  
+            <div><img class="img-fluid " src="images/qte_icn.png"/></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, autem!</p>
+            <p>Lorem ipsum </p>
+          </div>
+        </div>
+      </div>
+      <!-- <a class="carousel-control-prev" href="#testomoniBanner" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="carousel-control-next" href="#testomoniBanner" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a> -->
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+</section>
+  <section class="deal-sec pt-3">
+    <div class="container">
+      <div class="row">
+
+        <div class="d-flex flex-wrap text-white">
+          <div class="col-12 col-md-7 copyright-text text-left d-flex flex-wrap justify-content-center">
+
+            <div class="pt-8 d-flex justify-content-center">
+              <div class="my-auto">
+                <h3>deal of the month</h3>
+                <p class="mt-3 mb-5 text-left text-box">
+
+
+                  <a class="btn btn-lg bg_light
+                   mb-4 mt-2 btn-white btn-animate border-2" href="#" role="button">Request a quote</a>
+
+                </p>
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+          <div class="col-12 col-md-3 copyright-text text-left">
+            <div>
+              <img class="img-fluid mx-ht-100" src="images/deal-img.png">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-sec pt-3">
+    <div class="container">
+      <div class="row">
+
+        <div class="d-flex flex-wrap text-white">
+          <div class="col-12 col-md-4 copyright-text text-left">
+            <img class="img-fluid mx-ht-50" src="images/logo-l.png">
+            <div>
+              <h3>Address</h3>
+              <p>Lodem address</p>
+            </div>
+
+            <div>
+              <h3>Support</h3>
+              <p>photoeye@gmail.com</p>
+              <p>8368045461</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 copyright-text text-left">
+            <h3>Informative Links</h3>
+            <ul>
+              <li> > Terms & Condition</li>
+              <li> > Privacy Policy</li>
+              <li> > About Us</li>
+              <li> > Return & Refund Policy</li>
+              <li> > Shipping Policy</li>
+              <li> > Track Order</li>
+            </ul>
+          </div>
+
+          <div class="col-12 col-md-4 copyright-text text-left">
+            <div>
+              <h3>Newsletter</h3>
+              <p>Subscribe and Get regular
+                updates</p>
+              <div class="subscribe_btn_cont d-inline">
+                <div class="d-inline">
+                  <input class="border-0 " type="text" placeholder="Email Address">
+                  <button class="bg_light border-0">Subscribe</button>
+                </div>
+              </div>
+              <h3>Follow us</h3>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="pt-3">
+    <div class="container">
+      <div class="row">
+
+        <div class="d-flex">
+          <div class="col-md-6 copyright-text text-left">
+            <p>© 2023 Readershub. All Rights Reserved.</p>
+          </div>
+
+          <div class="col-md-6 copyright-text text-center">
+            <p>© 2023 Readershub. All Rights Reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+
+<!-- gallery -->
+<script src="js/jquery_v1.12.0.min.js"></script>
+<script src="js/bootstrap_v5.min.js"></script>
+
+<script src="js/jquery.blueimp-gallery.min.js"></script>
+
+<script src="js/aos.js"></script>
+<script src="./script.js"></script>
+<script src="js/custom.js"></script>
+<script>
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 20) {
+      $('.cnav').addClass("msticky");
+
+    }
+    else {
+      $('.cnav').removeClass("msticky");
+
+    }
+  });
+</script>
+
+
+<script>
+  AOS.init({
+    duration: 1200
+  });
+
+</script>
+
+<script>
+
+
+  (function () {
+    'use strict'
+
+    document.querySelector('[data-toggle="offcanvas"]').addEventListener('click', function () {
+      document.querySelector('.offcanvas-collapse').classList.toggle('open')
+      document.querySelector('.crs_nv').classList.toggle('open')
+    })
+  })()
+</script>
+
+
+<script>
+
+  // Hide all item in .carousel-item initially
+$(".testimoni_sldr_item.carousel-item *").addClass("d-none");
+
+// Animate the first slide
+setTimeout(function() {
+  $(".testimoni_sldr_item.carousel-item.active *")
+    .removeClass("d-none")
+    .addClass("animated");
+}, 300);
+
+// Animate after the slider changes
+$("#testomoniBanner").on("slid.bs.carousel", function(e) {
+  // Add .d-none to previous shown slide
+  $(".testimoni_sldr_item.carousel-item *").addClass("d-none");
+
+  // Element for new slide
+  var c = e["relatedTarget"];
+
+  // After 0.7 sec slide changes, then make the animation for new slide
+  setTimeout(function() {
+    $(c)
+      .find("*")
+      .removeClass("d-none")
+      .addClass("animated");
+    console.log("c");
+  }, 300);
+});
+</script>
+
+</html>
